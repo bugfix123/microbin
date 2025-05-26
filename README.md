@@ -35,7 +35,7 @@ MicroBin is a super tiny, feature rich, configurable, self-contained and self-ho
 
 ### Or host MicroBin yourself
 
-Run our quick docker setup script ([DockerHub](https://hub.docker.com/r/danielszabo99/microbin)):
+Run our quick docker setup script ([DockerHub](https://hub.docker.com/r/uniquepwd/microbin)):
 ```bash
 bash <(curl -s https://microbin.eu/docker.sh)
 ```
