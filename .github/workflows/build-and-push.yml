@@ -3,7 +3,7 @@ name: Release Docker images
 on:
   push:
     branches:
-      - dev
+      - main
   workflow_dispatch:
 
 permissions:
