@@ -58,7 +58,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.CR_PAT }}
           
 
       # 6. 【核心步骤】构建并推送 Docker 镜像
