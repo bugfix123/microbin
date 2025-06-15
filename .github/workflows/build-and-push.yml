@@ -9,15 +9,17 @@ on:
     # 当推送 vX.X.X 格式的 tag 时触发
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+*'
+permissions:
+  contents: read
+  packages: write
+  
 jobs:
   build-and-push-image:
     name: Build and Push Docker Image
     # 始终在最新的 ubuntu 环境中运行
     runs-on: ubuntu-latest
     # 设置权限，允许向 GHCR 写入
-    permissions:
-      contents: read
-      packages: write
+
 
     steps:
       # 1. 检出代码
